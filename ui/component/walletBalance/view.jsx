@@ -38,30 +38,26 @@ const WalletBalance = (props: Props) => {
             }
             actions={
               <div className="section__actions">
-                <Button
-                  button="primary"
-                  label={__('Receive Credits')}
-                  onClick={() => doOpenModal(MODALS.WALLET_RECEIVE)}
-                />
+                <Button button="primary" label={__('Receive LBC')} onClick={() => doOpenModal(MODALS.WALLET_RECEIVE)} />
                 <Button
                   button="secondary"
                   icon={ICONS.SEND}
-                  label={__('Send Credits')}
+                  label={__('Send LBC')}
                   onClick={() => doOpenModal(MODALS.WALLET_SEND)}
                 />
-                <Button
+                {/* <Button
                   button="link"
                   icon={ICONS.SEND}
                   label={__('Buy Credits')}
                   onClick={() => {
-                    window.open(
-                      'https://buy-staging.moonpay.io?apiKey=pk_test_123&currencyCode=LBC&colorCode=%23257761',
-                      'Purchase LBC',
-                      'height=600,width=800'
-                    );
-                    // doOpenModal(MODALS.PURCHASE_CREDITS)
+                    // window.open(
+                    //   'https://buy-staging.moonpay.io?apiKey=pk_test_123&currencyCode=LBC&colorCode=%23257761',
+                    //   'Purchase LBC',
+                    //   'height=600,width=800'
+                    // );
+                    doOpenModal(MODALS.PURCHASE_CREDITS);
                   }}
-                />
+                /> */}
               </div>
             }
           />

@@ -45,6 +45,7 @@ class RewardsPage extends PureComponent<Props> {
 
       return (
         <Card
+          className="section"
           title={__('Reward Validation Pending')}
           body={
             <React.Fragment>
@@ -144,7 +145,7 @@ class RewardsPage extends PureComponent<Props> {
     return (
       <Page>
         {this.renderPageHeader()}
-        {this.renderUnclaimedRewards()}
+        <div className="section">{this.renderUnclaimedRewards()}</div>
         {<RewardListClaimed />}
       </Page>
     );

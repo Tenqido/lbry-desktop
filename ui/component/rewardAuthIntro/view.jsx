@@ -18,6 +18,7 @@ function RewardAuthIntro(props: Props) {
 
   return (
     <Card
+      className="section"
       title={title || __('Sign In to lbry.tv to Earn Rewards')}
       subtitle={
         <I18nMessage
