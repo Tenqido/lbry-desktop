@@ -17,7 +17,7 @@ const WalletPage = (props: Props) => {
   return (
     <Page>
       <WalletBalance />
-      <TxoList search={search} />
+      {/* <TxoList search={search} /> */}
     </Page>
   );
 };

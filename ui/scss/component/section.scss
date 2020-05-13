@@ -40,14 +40,20 @@
 
 .section__title--large {
   @extend .section__title;
-  margin-right: var(--spacing-medium);
   display: inline-block;
+  margin-right: var(--spacing-medium);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-heading);
 
   @media (max-width: $breakpoint-small) {
     font-size: var(--font-title);
   }
+}
+
+.section__title--metadata {
+  @extend .section__title;
+  display: inline-block;
+  font-size: var(--font-body);
 }
 
 .section__subtitle {

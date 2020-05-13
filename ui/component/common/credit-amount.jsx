@@ -76,13 +76,13 @@ class CreditAmount extends React.PureComponent<Props> {
     return (
       <span
         title={fullPrice}
-        className={classnames(className, {
+        className={classnames('credit-amount__wrapper', className, {
           badge,
           'badge--cost': badge && amount > 0,
           'badge--free': badge && isFree,
         })}
       >
-        <span>{amountText}</span>
+        <span className="credit-amount">{amountText}</span>
 
         {isEstimate ? (
           <span className="credit-amount__estimate" title={__('This is an estimate and does not include data fees')}>
