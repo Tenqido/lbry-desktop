@@ -14,6 +14,32 @@ class DateTime extends React.PureComponent<Props> {
   static SHOW_TIME = 'time';
   static SHOW_BOTH = 'both';
 
+  static getTimeAgoStr(date: any) {
+    const suffixList = ['years', 'months', 'days', 'hours', 'minutes', 'seconds', ''];
+    var duration = 0;
+
+    for (var i = 0; i < suffixList.length; ++i) {
+      // moment() is very liberal with it's rounding.
+      // Always round down dates for better youtube parity.
+      duration = Math.floor(moment().diff(date, suffixList[i]));
+      if (duration > 0) {
+        break;
+      }
+    }
+
+    if (i === suffixList.length) {
+      // This should never happen since we are handling up to 'seconds' now,
+      // but display the English version just in case it does.
+      return moment(date).from(moment());
+    }
+
+    // Strip off the 's' for the singular suffix, construct the string ID,
+    // then load the localized version.
+    const suffix = duration === 1 ? suffixList[i].substr(0, suffixList[i].length - 1) : suffixList[i];
+    const strId = '%duration% ' + suffix + ' ago';
+    return __(strId, { duration });
+  }
+
   render() {
     const { date, timeAgo } = this.props;
     const show = this.props.show || DateTime.SHOW_BOTH;
@@ -23,32 +49,7 @@ class DateTime extends React.PureComponent<Props> {
         return null;
       }
 
-      // Moment is very liberal with it's rounding
-      // Wait to show "two years ago" until it's actually been two years (or higher)
-      const numberOfYearsSincePublish = Math.floor(moment().diff(date, 'years'));
-
-      if (numberOfYearsSincePublish === 1) {
-        return <span>{__('%numberOfYearsSincePublish% year ago', { numberOfYearsSincePublish })}</span>;
-      } else if (numberOfYearsSincePublish > 1) {
-        return <span>{__('%numberOfYearsSincePublish% years ago', { numberOfYearsSincePublish })}</span>;
-      }
-
-      const numberOfMonthsSincePublish = Math.floor(moment().diff(date, 'months'));
-      if (numberOfMonthsSincePublish === 1) {
-        return <span>{__('%numberOfMonthsSincePublish% month ago', { numberOfMonthsSincePublish })}</span>;
-      } else if (numberOfMonthsSincePublish > 1) {
-        return <span>{__('%numberOfMonthsSincePublish% months ago', { numberOfMonthsSincePublish })}</span>;
-      }
-
-      const numberOfDaysSincePublish = Math.floor(moment().diff(date, 'days'));
-      if (numberOfDaysSincePublish === 1) {
-        return <span>{__('%numberOfDaysSincePublish% day ago', { numberOfDaysSincePublish })}</span>;
-      } else if (numberOfDaysSincePublish > 1) {
-        return <span>{__('%numberOfDaysSincePublish% days ago', { numberOfDaysSincePublish })}</span>;
-      }
-
-      // "just now", "a few minutes ago"
-      return <span>{moment(date).from(moment())}</span>;
+      return <span>{DateTime.getTimeAgoStr(date)}</span>;
     }
 
     return (

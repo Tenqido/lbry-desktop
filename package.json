@@ -52,6 +52,7 @@
     "electron-updater": "^4.2.4",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
+    "remark-breaks": "^1.0.5",
     "videojs-logo": "^2.0.0"
   },
   "devDependencies": {
@@ -69,7 +70,7 @@
     "@babel/register": "^7.0.0",
     "@exponent/electron-cookies": "^2.0.0",
     "@hot-loader/react-dom": "^16.8",
-    "@lbry/components": "^4.1.4",
+    "@lbry/components": "^4.1.5",
     "@reach/menu-button": "0.7.4",
     "@reach/rect": "^0.2.1",
     "@reach/tabs": "^0.1.5",
@@ -131,7 +132,7 @@
     "imagesloaded": "^4.1.4",
     "json-loader": "^0.5.4",
     "lbry-format": "https://github.com/lbryio/lbry-format.git",
-    "lbry-redux": "lbryio/lbry-redux#3be6fa52ac1cb6224cf9de45623183e62c2b24ab",
+    "lbry-redux": "lbryio/lbry-redux#cd9c15567f2934ddc82de364d88b378ff04d5571",
     "lbryinc": "lbryio/lbryinc#cc62a4eec10845cc0b31da7d0f27287cfa7c4866",
     "lint-staged": "^7.0.2",
     "localforage": "^1.7.1",

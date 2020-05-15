@@ -1207,7 +1207,16 @@
   "Your wallet is not currently synced with lbry.tv. You are in control of backing up your wallet.": "Your wallet is not currently synced with lbry.tv. You are in control of backing up your wallet.",
   "Confirm": "Confirm",
   "(%lbc_balance% available)": "(%lbc_balance% available)",
-  "Choose file": "Choose file",
-  "Only one file is allowed, choose wisely:": "Only one file is allowed, choose wisely:",
-  "Accept": "Accept"
+  "%duration% years ago": "%duration% years ago",
+  "%duration% year ago": "%duration% year ago",
+  "%duration% months ago": "%duration% months ago",
+  "%duration% month ago": "%duration% month ago",
+  "%duration% days ago": "%duration% days ago",
+  "%duration% day ago": "%duration% day ago",
+  "%duration% hours ago": "%duration% hours ago",
+  "%duration% hour ago": "%duration% hour ago",
+  "%duration% minutes ago": "%duration% minutes ago",
+  "%duration% minute ago": "%duration% minute ago",
+  "%duration% seconds ago": "%duration% seconds ago",
+  "%duration% second ago": "%duration% second ago"
 }

@@ -10,11 +10,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Allow video sharing with start timestamp _community pr!_ ([#4142](https://github.com/lbryio/lbry-desktop/pull/4142))
 - Expose reflector status for publishes ([#4148](https://github.com/lbryio/lbry-desktop/pull/4148))
+
 ### Changed
 
 ### Fixed
 
 - Channel selector alignment on creator analytics page _community pr!_ ([#4157](https://github.com/lbryio/lbry-desktop/pull/4157))
+- Fix inconsistent relative-date string for claims, comments, etc. ([#4172](https://github.com/lbryio/lbry-desktop/pull/4172))
+- Error opening certain files with special characters in name #2777 _community pr!_ ([#4161](https://github.com/lbryio/lbry-desktop/pull/4161))
+- Comic-book file page shows download button first, and then viewer after download _community pr!_ ([#4161](https://github.com/lbryio/lbry-desktop/pull/4161))
 
 ## [0.45.1] - [2020-05-06]
 
@@ -28,7 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- Updated lbry-sdk to [0.72.9](https://github.com/lbryio/lbry-sdk/releases/tag/v0.72.0)
+- Updated lbry-sdk to [0.72.0](https://github.com/lbryio/lbry-sdk/releases/tag/v0.72.0)
 - Show 'elapsed/total' instead of countdown timer on video player _community pr!_ ([#4049](https://github.com/lbryio/lbry-desktop/pull/4049))
 - Modified app strings about wallet backup, to emphasize that the wallet also controls claims _community pr!_ ([#4056](https://github.com/lbryio/lbry-desktop/pull/4056))
 - Add confirmation when sending tip respecting "Purchase and Tip Confirmation" (formerly "Purchase Confirmation") setting, now visible in lbry.tv _community pr!_ ([#4051](https://github.com/lbryio/lbry-desktop/pull/4051))

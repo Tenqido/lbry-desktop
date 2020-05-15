@@ -3,7 +3,7 @@ export const MINIMUM_PUBLISH_BID = 0.00001;
 export const CHANNEL_ANONYMOUS = 'anonymous';
 export const CHANNEL_NEW = 'new';
 export const PAGE_SIZE = 20;
-export const PUBLISHES_PAGE_SIZE = 10;
+export const MY_CLAIMS_PAGE_SIZE = 10;
 export const PAGE_PARAM = 'page';
 export const PAGE_SIZE_PARAM = 'page_size';
 
@@ -21,4 +21,13 @@ export const FORCE_CONTENT_TYPE_PLAYER = [
   'audio/ogg',
   'application/x-ext-ogg',
   'application/x-ext-m4a',
+];
+
+export const FORCE_CONTENT_TYPE_COMIC = [
+  'application/vnd.comicbook+zip',
+  'application/vnd.comicbook-rar',
+  'application/x-cbr',
+  'application/x-cbt',
+  'application/x-cbz',
+  'application/x-cb7',
 ];

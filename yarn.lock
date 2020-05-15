@@ -826,10 +826,10 @@
     prop-types "^15.6.2"
     scheduler "^0.18.0"
 
-"@lbry/components@^4.1.4":
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/@lbry/components/-/components-4.1.4.tgz#f7475efee7b3d2e3e21b3b42c19afc9ffbf582af"
-  integrity sha512-U73izMtpU1SU89qP4sTqMU6LDCBNsivoS1Gd0jmuuDzMn3oq4Yj7kusD00iIwFzx27NTjVwdpTJGIBCAx09HwQ==
+"@lbry/components@^4.1.5":
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/@lbry/components/-/components-4.1.5.tgz#eb6a74c6e17ee9ed46cbb9c590aca10847d18f38"
+  integrity sha512-T/cR5tZvikI/dAE2euJP07+/yi+yO1wkE/4djT8EhCJITF+SZ0CjHG8auNYQ/zQw7H5KQnh/WMYaRVxO54FKLA==
 
 "@mapbox/hast-util-table-cell-style@^0.1.3":
   version "0.1.3"
@@ -6178,9 +6178,9 @@ lazy-val@^1.0.4:
     yargs "^13.2.2"
     zstd-codec "^0.1.1"
 
-lbry-redux@lbryio/lbry-redux#3be6fa52ac1cb6224cf9de45623183e62c2b24ab:
+lbry-redux@lbryio/lbry-redux#cd9c15567f2934ddc82de364d88b378ff04d5571:
   version "0.0.1"
-  resolved "https://codeload.github.com/lbryio/lbry-redux/tar.gz/3be6fa52ac1cb6224cf9de45623183e62c2b24ab"
+  resolved "https://codeload.github.com/lbryio/lbry-redux/tar.gz/cd9c15567f2934ddc82de364d88b378ff04d5571"
   dependencies:
     proxy-polyfill "0.1.6"
     reselect "^3.0.0"
@@ -9087,6 +9087,11 @@ remark-attr@^0.8.3:
   dependencies:
     html-element-attributes "^2.0.0"
     md-attr-parser "^1.2.1"
+
+remark-breaks@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/remark-breaks/-/remark-breaks-1.0.5.tgz#e9785f8b174f45c05af542fbeb18354b766e1139"
+  integrity sha512-lr8+TlJI273NjEqL27eUthPYPTCgXEj4NaLbnazS3bQaQL2FySlsbtgo52gE36fE1gWeQgkn1VdmWsoT+uA7FA==
 
 remark-emoji@^2.0.1:
   version "2.0.2"
