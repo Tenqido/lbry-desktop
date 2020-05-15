@@ -38,6 +38,7 @@ import ModalSetReferrer from 'modal/modalSetReferrer';
 import ModalRepost from 'modal/modalRepost';
 import ModalSignOut from 'modal/modalSignOut';
 import ModalLiquidateSupports from '../modalSupportsLiquidate';
+import ModalFileSelection from '../modalFileSelection';
 
 type Props = {
   modal: { id: string, modalProps: {} },
@@ -137,6 +138,8 @@ function ModalRouter(props: Props) {
       return <ModalSignOut {...modalProps} />;
     case MODALS.LIQUIDATE_SUPPORTS:
       return <ModalLiquidateSupports {...modalProps} />;
+    case MODALS.FILE_SELECTION:
+      return <ModalFileSelection {...modalProps} />;
     default:
       return null;
   }
