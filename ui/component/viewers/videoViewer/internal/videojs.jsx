@@ -16,6 +16,7 @@ export type Player = {
   muted: (?boolean) => boolean,
   dispose: () => void,
   currentTime: (?number) => number,
+  error: () => any,
 };
 
 type Props = {

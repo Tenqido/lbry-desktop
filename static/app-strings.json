@@ -1202,5 +1202,17 @@
   "File preview": "File preview",
   "Go Home": "Go Home",
   "Uploading (%progress%%) ": "Uploading (%progress%%) ",
-  "Confirming": "Confirming"
+  "Confirming": "Confirming",
+  "Confirm": "Confirm",
+  "Update Your Password": "Update Your Password",
+  "This will purchase %claim_title% for %amount%.": "This will purchase %claim_title% for %amount%.",
+  "Are you sure you want to purchase %claim_title%? %amount%": "Are you sure you want to purchase %claim_title%? %amount%",
+  "Are you sure you want to purchase %claim_title%?": "Are you sure you want to purchase %claim_title%?",
+  "Purchased!": "Purchased!",
+  "This content will now be in your Library.": "This content will now be in your Library.",
+  "Purchasing": "Purchasing",
+  "Playing in %seconds_left% seconds...": "Playing in %seconds_left% seconds...",
+  "All Downloads": "All Downloads",
+  "Your Purchases": "Your Purchases",
+  "You haven't purchased anything yet silly goose.": "You haven't purchased anything yet silly goose."
 }
