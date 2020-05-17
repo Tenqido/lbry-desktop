@@ -1218,5 +1218,13 @@
   "%duration% minutes ago": "%duration% minutes ago",
   "%duration% minute ago": "%duration% minute ago",
   "%duration% seconds ago": "%duration% seconds ago",
-  "%duration% second ago": "%duration% second ago"
+  "%duration% second ago": "%duration% second ago",
+  "Drop here to publish!": "Drop here to publish!",
+  "Only one file is allowed, choose wisely:": "Only one file is allowed, choose wisely:",
+  "Accept": "Accept",
+  "All content fees are charged in LBC. For non-LBC payment methods, the number of credits charged will be adjusted based on the value of LBRY credits at the time of purchase.": "All content fees are charged in LBC. For non-LBC payment methods, the number of credits charged will be adjusted based on the value of LBRY credits at the time of purchase.",
+  "Discover Channels": "Discover Channels",
+  "All Downloads": "All Downloads",
+  "Your Purchases": "Your Purchases",
+  "You haven't purchased anything yet silly goose.": "You haven't purchased anything yet silly goose."
 }
