@@ -51,7 +51,7 @@ function PublishFile(props: Props) {
 
   const RECOMMENDED_BITRATE = 6000000;
   const TV_PUBLISH_SIZE_LIMIT: number = 1073741824;
-  const UPLOAD_SIZE_MESSAGE = 'Lbrytv uploads are limited to 1 GB. Download the app for unrestricted publishing.';
+  const UPLOAD_SIZE_MESSAGE = 'Lbry.tv uploads are limited to 1 GB. Download the app for unrestricted publishing.';
   const PROCESSING_MB_PER_SECOND = 0.5;
   const MINUTES_THRESHOLD = 30;
   const HOURS_THRESHOLD = MINUTES_THRESHOLD * 60;
@@ -124,7 +124,7 @@ function PublishFile(props: Props) {
     if (isVid && duration && getBitrate(size, duration) > RECOMMENDED_BITRATE) {
       return (
         <p className="help--warning">
-          {__('Your video has a bitrate over 5 mbps. We suggest transcoding to provide viewers the best experience.')}{' '}
+          {__('Your video has a bitrate over 5 Mbps. We suggest transcoding to provide viewers the best experience.')}{' '}
           <Button button="link" label={__('Publishing Guide')} href="https://lbry.com/faq/video-publishing-guide" />
         </p>
       );
@@ -134,7 +134,7 @@ function PublishFile(props: Props) {
       return (
         <p className="help--warning">
           {__(
-            'Your video may not be the best format. Use MP4s in H264/AAC format and a friendly bitrate (under 5 mbps) and resolution (720p) for more reliable streaming.'
+            'Your video may not be the best format. Use MP4s in H264/AAC format and a friendly bitrate (under 5 Mbps) and resolution (720p) for more reliable streaming.'
           )}{' '}
           <Button button="link" label={__('Publishing Guide')} href="https://lbry.com/faq/video-publishing-guide" />
         </p>
@@ -153,7 +153,7 @@ function PublishFile(props: Props) {
       return (
         <p className="help">
           {__(
-            'For video content, use MP4s in H264/AAC format and a friendly bitrate (under 5 mbps) and resolution (720p) for more reliable streaming. Lbrytv uploads are restricted to 1GB.'
+            'For video content, use MP4s in H264/AAC format and a friendly bitrate (under 5 Mbps) and resolution (720p) for more reliable streaming. Lbry.tv uploads are restricted to 1 GB.'
           )}{' '}
           <Button button="link" label={__('Publishing Guide')} href="https://lbry.com/faq/video-publishing-guide" />
         </p>
@@ -166,7 +166,7 @@ function PublishFile(props: Props) {
       return (
         <p className="help">
           {__(
-            'For video content, use MP4s in H264/AAC format and a friendly bitrate (under 5 mbps) and resolution (720p) for more reliable streaming.'
+            'For video content, use MP4s in H264/AAC format and a friendly bitrate (under 5 Mbps) and resolution (720p) for more reliable streaming.'
           )}{' '}
           <Button button="link" label={__('Publishing Guide')} href="https://lbry.com/faq/video-publishing-guide" />
         </p>
@@ -292,7 +292,7 @@ function PublishFile(props: Props) {
                   units: getUnitsForMB(sizeInMB),
                 }}
               >
-                Transcoding this %size%MB file should take under %processTime% %units%.
+                Transcoding this %size% MB file should take under %processTime% %units%.
               </I18nMessage>
             </p>
           )}
